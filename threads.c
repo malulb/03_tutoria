@@ -11,10 +11,8 @@ void *parent()
     pthread_t th2;
     pthread_t th3;
     pthread_t th4;
-    printf("h");
 	scanf("%d",&n);
 	for(int i=0;i<n;i++){
-        printf("g\n");
 	    scanf("%d",&a[i]);}
 	pthread_create(&th4,NULL,&thread_avg,NULL);
     pthread_join(th4,NULL);
